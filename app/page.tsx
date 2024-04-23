@@ -3,6 +3,7 @@
 import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import SplitType from "split-type";
 
 gsap.registerPlugin(useGSAP);
 
@@ -32,6 +33,28 @@ function Hero() {
                 autoAlpha: 0,
                 ease: "power2.inOut",
             });
+
+            const childSplit = new SplitType(".bruh", {
+                types: "lines",
+                lineClass: "split-child",
+            });
+
+            gsap.from(childSplit.lines, {
+                duration: 1,
+                y: 100,
+                ease: "power4",
+                visibility: "visible",
+                stagger: 0.2,
+                onComplete: function () {
+                    // NEED BETTER SOLUTION, causes a flicker on dev
+                    if (childSplit.lines) {
+                        childSplit.lines.forEach((line) => {
+                            line.style.opacity = "1";
+                            line.style.visibility = "visible";
+                        });
+                    }
+                },
+            });
         },
         { scope: container }
     );
@@ -45,9 +68,9 @@ function Hero() {
                 <h1 className="p-title text-9xl font-extrabold tracking-[1em] justify-center flex invisible">
                     PORTFOLIO
                 </h1>
-                <div className="absolute flex flex-col mt-28 font-bold text-stroke text-transparent mr-8 right-0">
-                    <h1 className="text-8xl">DEV</h1>
-                    <h1 className="text-8xl">DESIGN</h1>
+                <div className="absolute flex flex-col mt-28 font-bold text-stroke text-transparent mr-8 right-0 visible">
+                    <h1 className="text-8xl bruh">DEV</h1>
+                    <h1 className="text-8xl bruh">DESIGN</h1>
                 </div>
             </div>
         </div>
