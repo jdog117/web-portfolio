@@ -18,8 +18,8 @@ export default function Home() {
         <div className="">
             <Hero />
             <Regenmed />
-            {/* <Fund />
-            <Emailfinder /> */}
+            <Fund />
+            {/* <Emailfinder /> */}
         </div>
     );
 }
@@ -155,15 +155,71 @@ function Regenmed() {
                 </div>
                 <div className="absolute w-full h-[55%] m-12 mt-16 bg-[#BBA67F]"></div>
             </div>
-
-            {/* Features: smooth scroll, juicy animationsm, responsive design */}
         </div>
     );
 }
 
 function Fund() {
     return (
-        <div className="w-full h-screen items-center justify-center flex bg-background"></div>
+        <div className="w-full flex bg-background justify-between overflow-hidden mt-20">
+            <div className="flex justify-end mt-52 mr-20">
+                <div className="flex-row items-end z-20">
+                    <Image
+                        src={rmHero}
+                        alt=""
+                        width={800}
+                        className="shadow-lg m-8 "
+                    />
+                    <Image
+                        src={rmHero5}
+                        alt=""
+                        width={800}
+                        className="shadow-lg m-8"
+                    />
+                    <div className="flex flex-row">
+                        <Image
+                            src={rmHero3}
+                            alt=""
+                            width={400}
+                            className="shadow-lg m-4"
+                        />
+                        <Image
+                            src={rmHero4}
+                            alt=""
+                            width={400}
+                            className="shadow-lg m-4"
+                        />
+                    </div>
+                </div>
+                <div className="absolute w-full h-[55%] m-12 mt-16 bg-[#BBA67F]"></div>
+            </div>
+
+            <div className="z-20 w-1/2">
+                <h1 className="text-7xl font-bold ml-32 mt-20 tracking-widest">
+                    1571 Fund
+                </h1>
+                <h1 className="text-4xl font-bold ml-32 mt-12 text-primary">
+                    02
+                </h1>
+                <h1 className="text-5xl font-bold ml-32 mt-20">FEATURES</h1>
+                <p className="text-1xl ml-32 mt-6 text-tertiary w-1/2 text-justify">
+                    Started in figma colaborating with the team to concept the
+                    design of the site. Then developed it as a single page Vite
+                    app whith a contact form.
+                </p>
+                <div className="font-bold">
+                    <p className="text-2xl ml-32 mt-12 text-tertiary">
+                        SEO optimized
+                    </p>
+                    <p className="text-2xl ml-32 mt-4 text-tertiary">
+                        Responsive design
+                    </p>
+                    <p className="text-2xl ml-32 mt-4 text-tertiary">
+                        Built in contact form
+                    </p>
+                </div>
+            </div>
+        </div>
     );
 }
 
