@@ -6,10 +6,14 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import SplitType from "split-type";
 import rmHero from "@/public/regenmed/rm1.png";
-import rmHero2 from "@/public/regenmed/rm3.png";
 import rmHero3 from "@/public/regenmed/rm4.png";
 import rmHero4 from "@/public/regenmed/rm5.png";
 import rmHero5 from "@/public/regenmed/figma/Regen Med.png";
+import fund1 from "@/public/fund/fund1.png";
+import fund2 from "@/public/fund/fund2.png";
+import fund3 from "@/public/fund/fund3.png";
+import fund4 from "@/public/fund/fund4.png";
+import fund5 from "@/public/fund/fund5.png";
 
 gsap.registerPlugin(useGSAP);
 
@@ -165,33 +169,32 @@ function Fund() {
             <div className="flex justify-end mt-52 mr-20">
                 <div className="flex-row items-end z-20">
                     <Image
-                        src={rmHero}
+                        src={fund1}
                         alt=""
                         width={800}
                         className="shadow-lg m-8 "
                     />
                     <Image
-                        src={rmHero5}
+                        src={fund2}
                         alt=""
                         width={800}
                         className="shadow-lg m-8"
                     />
                     <div className="flex flex-row">
                         <Image
-                            src={rmHero3}
+                            src={fund3}
                             alt=""
                             width={400}
                             className="shadow-lg m-4"
                         />
                         <Image
-                            src={rmHero4}
+                            src={fund4}
                             alt=""
                             width={400}
                             className="shadow-lg m-4"
                         />
                     </div>
                 </div>
-                <div className="absolute w-full h-[55%] m-12 mt-16 bg-[#BBA67F]"></div>
             </div>
 
             <div className="z-20 w-1/2">
@@ -212,13 +215,14 @@ function Fund() {
                         SEO optimized
                     </p>
                     <p className="text-2xl ml-32 mt-4 text-tertiary">
-                        Responsive design
+                        Contact form
                     </p>
                     <p className="text-2xl ml-32 mt-4 text-tertiary">
-                        Built in contact form
+                        Responsive design
                     </p>
                 </div>
             </div>
+            <div className="absolute w-full h-[55%] m-12 mt-64 bg-[#cc9a83]"></div>
         </div>
     );
 }
