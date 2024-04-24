@@ -108,7 +108,7 @@ function Hero() {
 
 function Regenmed() {
     return (
-        <div className="w-full flex bg-secondary justify-between overflow-hidden">
+        <div className="w-full flex bg-secondary justify-between overflow-hidden pb-20">
             <div className="z-20 w-1/2 ">
                 <h1 className="text-7xl font-bold ml-32 mt-20 tracking-widest">
                     Regen Med
@@ -175,7 +175,7 @@ function Regenmed() {
 
 function Fund() {
     return (
-        <div className="w-full flex bg-background justify-between overflow-hidden mt-20">
+        <div className="w-full flex bg-background justify-between overflow-hidden mt-20 pb-20">
             <div className="flex justify-end mt-52 mr-20">
                 <div className="flex-row items-end z-20">
                     <Image
@@ -208,9 +208,11 @@ function Fund() {
             </div>
 
             <div className="z-20 w-1/2">
-                <h1 className="text-7xl font-bold ml-32 mt-20 tracking-widest">
-                    1571 Fund
-                </h1>
+                <a href="https://1571fund.com">
+                    <h1 className="text-7xl font-bold ml-32 mt-20 tracking-widest scale-100 hover:scale-105 transition-all">
+                        1571 Fund
+                    </h1>
+                </a>
                 <h1 className="text-4xl font-bold ml-32 mt-12 text-primary">
                     02
                 </h1>
@@ -238,11 +240,13 @@ function Fund() {
 
 function Emailfinder() {
     return (
-        <div className="w-full flex bg-secondary justify-between overflow-hidden">
+        <div className="w-full flex bg-secondary justify-between overflow-hidden pb-20">
             <div className="z-20 w-1/2">
-                <h1 className="text-7xl font-bold ml-32 mt-20 tracking-widest">
-                    Email Finder
-                </h1>
+                <a href="https://emailfinder-jc.vercel.app">
+                    <h1 className="text-7xl font-bold ml-32 mt-20 tracking-widest scale-100 hover:scale-105 transition-all">
+                        Email Finder
+                    </h1>
+                </a>
                 <h1 className="text-4xl font-bold ml-32 mt-12 text-primary">
                     03
                 </h1>
