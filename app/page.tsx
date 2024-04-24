@@ -85,16 +85,21 @@ function Hero() {
 
     return (
         <div className="w-full h-screen items-center justify-center flex">
-            <div ref={container} className="container flex flex-col relative">
-                <h1 className="text-4xl text-right mr-32 mb-2 justify-end flex j-title invisible">
+            <div
+                ref={container}
+                className="container flex flex-col relative w-min"
+            >
+                <h1 className="text-3xl xl:text-4xl ml-10 md:ml-0 text-left md:text-right mr-8 xl:mr-12 mb-2 justify-end flex j-title invisible">
                     JOEY CASEY
                 </h1>
-                <h1 className="p-title text-9xl font-extrabold tracking-[1em] justify-center flex invisible">
-                    PORTFOLIO
+                <h1 className="p-title text-7xl xl:text-9xl font-extrabold tracking-[1em] flex flex-col space-y-2 md:flex-row md:space-y-0 justify-center text-center invisible">
+                    {Array.from("PORTFOLIO").map((letter, index) => (
+                        <span key={index}>{letter}</span>
+                    ))}
                 </h1>
-                <div className="absolute flex flex-col mt-28 font-bold text-stroke text-transparent mr-8 right-0 visible">
-                    <h1 className="text-8xl bruh">DEV &</h1>
-                    <h1 className="text-8xl bruh">DESIGN</h1>
+                <div className="absolute flex flex-col mt-20 xl:mt-28 font-bold text-stroke text-transparent md:translate-x-0 translate-x-16 md:translate-y-0 translate-y-[670px] md:mr-0 xl:-mr-16 right-0 visible ">
+                    <h1 className="text-5xl xl:text-8xl bruh">DEV &</h1>
+                    <h1 className="text-5xl xl:text-8xl bruh">DESIGN</h1>
                 </div>
             </div>
         </div>
