@@ -9,6 +9,7 @@ import rmHero from "@/public/regenmed/rm1.png";
 import rmHero2 from "@/public/regenmed/rm3.png";
 import rmHero3 from "@/public/regenmed/rm4.png";
 import rmHero4 from "@/public/regenmed/rm5.png";
+import rmHero5 from "@/public/regenmed/figma/Regen Med.png";
 
 gsap.registerPlugin(useGSAP);
 
@@ -17,8 +18,8 @@ export default function Home() {
         <div className="">
             <Hero />
             <Regenmed />
-            <Fund />
-            <Emailfinder />
+            {/* <Fund />
+            <Emailfinder /> */}
         </div>
     );
 }
@@ -92,17 +93,38 @@ function Hero() {
 
 function Regenmed() {
     return (
-        <div className="w-full flex bg-secondary justify-between">
-            <div>
+        <div className="w-full flex bg-secondary justify-between overflow-hidden">
+            <div className="z-20 w-1/2">
                 <h1 className="text-7xl font-bold ml-32 mt-20 tracking-widest">
                     Regen Med
                 </h1>
-                <h1 className="text-4xl font-bold ml-32 mt-12 text-primary z-20">
+                <h1 className="text-4xl font-bold ml-32 mt-12 text-primary">
                     01
                 </h1>
+                <h1 className="text-5xl font-bold ml-32 mt-20">FEATURES</h1>
+                <p className="text-1xl ml-32 mt-6 text-tertiary w-1/2 text-justify">
+                    Designed and developed this site for a medical startup. It
+                    features a JavaScript based virtual treatement consultaion
+                    along with scheduling and service information. Will be live
+                    soon.
+                </p>
+                <div className="font-bold">
+                    <p className="text-2xl ml-32 mt-12 text-tertiary">
+                        Smooth scroll
+                    </p>
+                    <p className="text-2xl ml-32 mt-4 text-tertiary">
+                        SEO optimized
+                    </p>
+                    <p className="text-2xl ml-32 mt-4 text-tertiary">
+                        Responsive design
+                    </p>
+                    <p className="text-2xl ml-32 mt-4 text-tertiary">
+                        Beautiful GSAP animations
+                    </p>
+                </div>
             </div>
 
-            <div className="flex justify-end">
+            <div className="flex justify-end mt-52 mr-20">
                 <div className="flex-row items-end z-20">
                     <Image
                         src={rmHero}
@@ -111,7 +133,7 @@ function Regenmed() {
                         className="shadow-lg m-8 "
                     />
                     <Image
-                        src={rmHero2}
+                        src={rmHero5}
                         alt=""
                         width={800}
                         className="shadow-lg m-8"
@@ -131,7 +153,7 @@ function Regenmed() {
                         />
                     </div>
                 </div>
-                <div className="absolute w-full h-full m-12 mt-72 bg-blue-400"></div>
+                <div className="absolute w-full h-[55%] m-12 mt-16 bg-[#BBA67F]"></div>
             </div>
 
             {/* Features: smooth scroll, juicy animationsm, responsive design */}
