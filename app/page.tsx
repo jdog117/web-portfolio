@@ -247,8 +247,8 @@ function Emailfinder() {
                 <p className="text-1xl ml-32 mt-6 text-tertiary w-1/2 text-justify">
                     I created this site to aid me on my job search. Often, when
                     I need to contact a recruiter or an employee at a company
-                    I'm looking to apply to, it's difficult to get their contact
-                    info or even reach them on LinkedIn.
+                    I&apos;m looking to apply to, it&apos;s difficult to get
+                    their contact info or even reach them on LinkedIn.
                 </p>
                 <div className="font-bold">
                     <h1 className="text-2xl ml-32 mt-12 text-tertiary">
