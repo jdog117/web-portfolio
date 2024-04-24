@@ -109,7 +109,7 @@ function Hero() {
 function Regenmed() {
     return (
         <div className="w-full flex bg-secondary justify-between overflow-hidden">
-            <div className="z-20 w-1/2">
+            <div className="z-20 w-1/2 ">
                 <h1 className="text-7xl font-bold ml-32 mt-20 tracking-widest">
                     Regen Med
                 </h1>
@@ -140,7 +140,7 @@ function Regenmed() {
             </div>
 
             <div className="flex justify-end mt-52 mr-20">
-                <div className="flex-row items-end z-20">
+                <div className="flex-row items-end z-20 ">
                     <Image
                         src={rmHero}
                         alt=""
@@ -168,7 +168,6 @@ function Regenmed() {
                         />
                     </div>
                 </div>
-                <div className="absolute w-full h-[55%] m-12 mt-16 bg-[#BBA67F]"></div>
             </div>
         </div>
     );
@@ -233,7 +232,6 @@ function Fund() {
                     </h1>
                 </div>
             </div>
-            <div className="absolute w-full h-[55%] m-12 mt-64 bg-[#cc9a83]"></div>
         </div>
     );
 }
@@ -312,7 +310,6 @@ function Emailfinder() {
                         />
                     </div> */}
                 </div>
-                <div className="absolute w-full h-[55%] m-12 mt-12 bg-[#BBA67F]"></div>
             </div>
         </div>
     );
