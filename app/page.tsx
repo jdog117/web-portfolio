@@ -14,6 +14,11 @@ import fund2 from "@/public/fund/fund2.png";
 import fund3 from "@/public/fund/fund3.png";
 import fund4 from "@/public/fund/fund4.png";
 import fund5 from "@/public/fund/fund5.png";
+import bef1 from "@/public/emailfinder/ef1.png";
+import bef2 from "@/public/emailfinder/ef2.png";
+import bef3 from "@/public/emailfinder/email-finder-base.png";
+import bef4 from "@/public/emailfinder/email-finder-example2.png";
+import bef5 from "@/public/emailfinder/site-bigger2.png";
 
 gsap.registerPlugin(useGSAP);
 
@@ -23,7 +28,7 @@ export default function Home() {
             <Hero />
             <Regenmed />
             <Fund />
-            {/* <Emailfinder /> */}
+            <Emailfinder />
             <Footer />
         </div>
     );
@@ -230,13 +235,87 @@ function Fund() {
 
 function Emailfinder() {
     return (
-        <div className="w-full h-screen items-center justify-center flex bg-secondary"></div>
+        <div className="w-full flex bg-secondary justify-between overflow-hidden">
+            <div className="z-20 w-1/2">
+                <h1 className="text-7xl font-bold ml-32 mt-20 tracking-widest">
+                    Email Finder
+                </h1>
+                <h1 className="text-4xl font-bold ml-32 mt-12 text-primary">
+                    03
+                </h1>
+                <h1 className="text-5xl font-bold ml-32 mt-20">FEATURES</h1>
+                <p className="text-1xl ml-32 mt-6 text-tertiary w-1/2 text-justify">
+                    I created this site to aid me on my job search. Often, when
+                    I need to contact a recruiter or an employee at a company
+                    I'm looking to apply to, it's difficult to get their contact
+                    info or even reach them on LinkedIn.
+                </p>
+                <div className="font-bold">
+                    <h1 className="text-2xl ml-32 mt-12 text-tertiary">
+                        Custom secure server
+                    </h1>
+                    <h1 className="text-2xl ml-32 mt-4 text-tertiary">
+                        Color themes
+                    </h1>
+                    <h1 className="text-2xl ml-32 mt-4 text-tertiary">
+                        Responsive design
+                    </h1>
+                    <h1 className="text-2xl ml-32 mt-4 text-tertiary">
+                        Input response & validation
+                    </h1>
+                </div>
+            </div>
+
+            <div className="flex justify-end mt-52 mr-20">
+                <div className="flex-row items-end z-20">
+                    <Image
+                        src={bef2}
+                        alt=""
+                        width={800}
+                        className="shadow-lg m-8 "
+                    />
+                    <Image
+                        src={bef1}
+                        alt=""
+                        width={800}
+                        className="shadow-lg m-8"
+                    />
+                    <Image
+                        src={bef4}
+                        alt=""
+                        width={800}
+                        className="shadow-lg m-8"
+                    />
+                    <Image
+                        src={bef3}
+                        alt=""
+                        width={800}
+                        className="shadow-lg m-8"
+                    />
+                    {/* <div className="flex flex-row">
+                        <Image
+                            src={bef3}
+                            alt=""
+                            width={400}
+                            className="shadow-lg m-4"
+                        />
+                        <Image
+                            src={bef1}
+                            alt=""
+                            width={400}
+                            className="shadow-lg m-4"
+                        />
+                    </div> */}
+                </div>
+                <div className="absolute w-full h-[55%] m-12 mt-12 bg-[#BBA67F]"></div>
+            </div>
+        </div>
     );
 }
 
 function Footer() {
     return (
-        <div className="w-full flex bg-secondary justify-between mt-20 p-20 items-center">
+        <div className="w-full flex bg-background justify-between mt-20 p-20 items-center">
             <div className="flex-row">
                 <h1 className="text-lg font-bold"> Contact</h1>
                 <p className="mt-4 text-base">jspcasey@gmail.com</p>
