@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { Rubik } from "next/font/google";
 import LenisSmoothScrollProps from "@/components/lenisScroll";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
+const rubik = Rubik({ subsets: ["latin"], variable: "--font-rubik" });
 
 export const metadata: Metadata = {
     title: "Create Next App",
@@ -17,7 +19,8 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className={inter.className}>
+            {/* `${inter.variable} ${rubik.variable}` */}
+            <body className={rubik.className}>
                 <LenisSmoothScrollProps>{children}</LenisSmoothScrollProps>
             </body>
         </html>

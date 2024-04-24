@@ -114,18 +114,18 @@ function Regenmed() {
                     soon.
                 </p>
                 <div className="font-bold">
-                    <p className="text-2xl ml-32 mt-12 text-tertiary">
+                    <h1 className="text-2xl ml-32 mt-12 text-tertiary">
                         Smooth scroll
-                    </p>
-                    <p className="text-2xl ml-32 mt-4 text-tertiary">
+                    </h1>
+                    <h1 className="text-2xl ml-32 mt-4 text-tertiary">
                         SEO optimized
-                    </p>
-                    <p className="text-2xl ml-32 mt-4 text-tertiary">
+                    </h1>
+                    <h1 className="text-2xl ml-32 mt-4 text-tertiary">
                         Responsive design
-                    </p>
-                    <p className="text-2xl ml-32 mt-4 text-tertiary">
+                    </h1>
+                    <h1 className="text-2xl ml-32 mt-4 text-tertiary">
                         Beautiful GSAP animations
-                    </p>
+                    </h1>
                 </div>
             </div>
 
@@ -208,19 +208,19 @@ function Fund() {
                 <h1 className="text-5xl font-bold ml-32 mt-20">FEATURES</h1>
                 <p className="text-1xl ml-32 mt-6 text-tertiary w-1/2 text-justify">
                     Started in figma colaborating with the team to concept the
-                    design of the site. Then developed it as a single page Vite
-                    app whith a contact form.
+                    design of the site. Then developed it as a single page SEO
+                    optimized Vite app with a contact form.
                 </p>
                 <div className="font-bold">
-                    <p className="text-2xl ml-32 mt-12 text-tertiary">
+                    <h1 className="text-2xl ml-32 mt-12 text-tertiary">
                         SEO optimized
-                    </p>
-                    <p className="text-2xl ml-32 mt-4 text-tertiary">
+                    </h1>
+                    <h1 className="text-2xl ml-32 mt-4 text-tertiary">
                         Contact form
-                    </p>
-                    <p className="text-2xl ml-32 mt-4 text-tertiary">
+                    </h1>
+                    <h1 className="text-2xl ml-32 mt-4 text-tertiary">
                         Responsive design
-                    </p>
+                    </h1>
                 </div>
             </div>
             <div className="absolute w-full h-[55%] m-12 mt-64 bg-[#cc9a83]"></div>
