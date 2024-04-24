@@ -24,6 +24,7 @@ export default function Home() {
             <Regenmed />
             <Fund />
             {/* <Emailfinder /> */}
+            <Footer />
         </div>
     );
 }
@@ -230,5 +231,20 @@ function Fund() {
 function Emailfinder() {
     return (
         <div className="w-full h-screen items-center justify-center flex bg-secondary"></div>
+    );
+}
+
+function Footer() {
+    return (
+        <div className="w-full flex bg-secondary justify-between mt-20 p-20 items-center">
+            <div className="flex-row">
+                <h1 className="text-lg font-bold"> Contact</h1>
+                <p className="mt-4 text-base">jspcasey@gmail.com</p>
+                <p className="mt-2 text-base">5092184707</p>
+            </div>
+            <p className="text-sm text-neutral-700">
+                © Joey Casey {new Date().getFullYear()}
+            </p>
+        </div>
     );
 }
