@@ -19,6 +19,7 @@ import bef2 from "@/public/emailfinder/ef2.png";
 import bef3 from "@/public/emailfinder/email-finder-base.png";
 import bef4 from "@/public/emailfinder/email-finder-example2.png";
 import bef5 from "@/public/emailfinder/site-bigger2.png";
+import rmPC from "@/public/regenmed/rm_pc1.png";
 
 gsap.registerPlugin(useGSAP);
 
@@ -108,21 +109,25 @@ function Hero() {
 
 function Regenmed() {
     return (
-        <div className="w-full flex bg-secondary justify-between overflow-hidden pb-20">
-            <div className="z-20 w-1/2 ">
-                <h1 className="text-7xl font-bold ml-32 mt-20 tracking-widest">
+        <div className="relative flex bg-secondary justify-between  pb-20 m-4 md:m-20">
+            <div className="basis-3/4">
+                <h1 className="max-[1600px]:text-7xl text-8xl font-bold ml-32 mt-20 tracking-widest">
                     Regen Med
                 </h1>
-                <h1 className="text-4xl font-bold ml-32 mt-12 text-primary">
+                <h1 className="max-[1600px]:text-5xl text-6xl font-bold ml-32 mt-12 text-primary">
                     01
                 </h1>
-                <h1 className="text-5xl font-bold ml-32 mt-20">FEATURES</h1>
-                <p className="text-1xl ml-32 mt-6 text-tertiary w-1/2 text-justify">
-                    Designed and developed this site for a medical startup. It
-                    features a JavaScript based virtual treatement consultaion
-                    along with scheduling and service information. Will be live
-                    soon.
-                </p>
+                <div className="max-w-[50rem]">
+                    <h1 className="max-[1600px]:text-4xl text-5xl font-bold ml-32 mt-20">
+                        FEATURES
+                    </h1>
+                    <p className="text-1xl ml-32 mt-6 text-tertiary w-1/2 text-justify">
+                        Designed and developed this site for a medical startup.
+                        It features a JavaScript based virtual treatement
+                        consultaion along with scheduling and service
+                        information. Will be live soon.
+                    </p>
+                </div>
                 <div className="font-bold">
                     <h1 className="text-2xl ml-32 mt-12 text-tertiary">
                         Smooth scroll
@@ -138,8 +143,15 @@ function Regenmed() {
                     </h1>
                 </div>
             </div>
+            <div className="w-2/3">
+                <Image
+                    src={rmPC}
+                    alt=""
+                    className="-translate-y-32 -translate-x-10"
+                ></Image>
+            </div>
 
-            <div className="flex justify-end mt-52 mr-20">
+            {/* <div className="flex justify-end mt-52 mr-20">
                 <div className="flex-row items-end z-20 ">
                     <Image
                         src={rmHero}
@@ -168,7 +180,7 @@ function Regenmed() {
                         />
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 }
