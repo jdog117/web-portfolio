@@ -109,79 +109,58 @@ function Hero() {
 
 function Regenmed() {
     return (
-        <div className="flex flex-col lg:flex-row bg-secondary justify-between max-lg:items-center pb-20 m-4 md:m-20 mt-20 p-4 md:pl-20">
-            <div className="basis-3/4">
-                <h1 className="max-sm:text-4xl max-[1600px]:text-7xl text-8xl font-bold mt-10 md:mt-20 tracking-widest">
-                    Regen Med
-                </h1>
-                <h1 className="max-sm:text-3xl max-[1600px]:text-5xl text-6xl font-bold mt-6 md:mt-12 text-primary">
-                    01
-                </h1>
-                <div className="max-w-[50rem]">
-                    <h1 className="max-sm:text-3xl max-[1600px]:text-4xl text-5xl font-bold  mt-10 md:mt-20">
-                        FEATURES
+        <>
+            <div className="flex flex-col lg:flex-row bg-secondary justify-between max-lg:items-center pb-20 m-4 md:m-20 mt-20 p-4 md:pl-20">
+                <div className="basis-3/4">
+                    <h1 className="max-sm:text-4xl max-[1600px]:text-7xl text-8xl font-bold mt-10 md:mt-20 tracking-widest">
+                        Regen Med
                     </h1>
-                    <p className="text-1xl mt-6 text-tertiary text-justify">
-                        Designed and developed this site for a medical startup.
-                        It features a JavaScript based virtual treatement
-                        consultaion along with scheduling and service
-                        information. Will be live soon.
-                    </p>
-                </div>
-                <div className="font-bold">
-                    <h1 className="text-2xl mt-12 text-tertiary">
-                        Smooth scroll
+                    <h1 className="max-sm:text-3xl max-[1600px]:text-5xl text-6xl font-bold mt-6 md:mt-12 text-primary">
+                        01
                     </h1>
-                    <h1 className="text-2xl mt-4 text-tertiary">
-                        SEO optimized
-                    </h1>
-                    <h1 className="text-2xl mt-4 text-tertiary">
-                        Responsive design
-                    </h1>
-                    <h1 className="text-2xl mt-4 text-tertiary">
-                        Beautiful GSAP animations
-                    </h1>
-                </div>
-            </div>
-            <div className="w-2/3">
-                <Image
-                    src={rmPC}
-                    alt=""
-                    className="lg:-translate-y-32 lg:-translate-x-10 translate-y-28 max-lg:scale-150"
-                ></Image>
-            </div>
-
-            {/* <div className="flex justify-end mt-52 mr-20">
-                <div className="flex-row items-end z-20 ">
-                    <Image
-                        src={rmHero}
-                        alt=""
-                        width={800}
-                        className="shadow-lg m-8 "
-                    />
-                    <Image
-                        src={rmHero5}
-                        alt=""
-                        width={800}
-                        className="shadow-lg m-8"
-                    />
-                    <div className="flex flex-row">
-                        <Image
-                            src={rmHero3}
-                            alt=""
-                            width={400}
-                            className="shadow-lg m-4"
-                        />
-                        <Image
-                            src={rmHero4}
-                            alt=""
-                            width={400}
-                            className="shadow-lg m-4"
-                        />
+                    <div className="max-w-[50rem]">
+                        <h1 className="max-sm:text-3xl max-[1600px]:text-4xl text-5xl font-bold  mt-10 md:mt-20">
+                            FEATURES
+                        </h1>
+                        <p className="text-1xl mt-6 text-tertiary text-justify">
+                            Designed and developed this site for a medical
+                            startup. It features a JavaScript based virtual
+                            treatement consultaion along with scheduling and
+                            service information. Will be live soon.
+                        </p>
+                    </div>
+                    <div className="font-bold">
+                        <h1 className="text-2xl mt-12 text-tertiary">
+                            Smooth scroll
+                        </h1>
+                        <h1 className="text-2xl mt-4 text-tertiary">
+                            SEO optimized
+                        </h1>
+                        <h1 className="text-2xl mt-4 text-tertiary">
+                            Responsive design
+                        </h1>
+                        <h1 className="text-2xl mt-4 text-tertiary">
+                            Beautiful GSAP animations
+                        </h1>
                     </div>
                 </div>
-            </div> */}
-        </div>
+                <div className="w-2/3">
+                    <Image
+                        src={rmPC}
+                        alt=""
+                        className="lg:-translate-y-32 lg:-translate-x-10 translate-y-28 max-lg:scale-150"
+                    ></Image>
+                </div>
+            </div>
+
+            <div className="grid grid-cols-2 grid-rows-2 gap-4">
+                <Image src={rmHero} alt="" className="shadow-lg w-full" />
+                <Image src={rmHero5} alt="" className="shadow-lg w-full" />
+
+                <Image src={rmHero3} alt="" className="shadow-lg w-full" />
+                <Image src={rmHero4} alt="" className="shadow-lg w-full" />
+            </div>
+        </>
     );
 }
 
