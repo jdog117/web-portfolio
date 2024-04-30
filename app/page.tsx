@@ -5,10 +5,10 @@ import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import SplitType from "split-type";
-import rmHero from "@/public/regenmed/rm1.png";
-import rmHero3 from "@/public/regenmed/rm4.png";
-import rmHero4 from "@/public/regenmed/rm5.png";
-import rmHero5 from "@/public/regenmed/figma/Regen Med.png";
+import rmHero from "@/public/regenmed/rmheronew.png";
+import rmTeam from "@/public/regenmed/rmTeam.png";
+import rmFAQ from "@/public/regenmed/rmfaq.png";
+import rmServices from "@/public/regenmed/figma/rmservices.png";
 import fund1 from "@/public/fund/fund1.png";
 import fund2 from "@/public/fund/fund2.png";
 import fund3 from "@/public/fund/fund3.png";
@@ -110,7 +110,7 @@ function Hero() {
 function Regenmed() {
     return (
         <>
-            <div className="flex flex-col lg:flex-row bg-secondary justify-between max-lg:items-center pb-20 m-4 md:m-20 mt-20 p-4 md:pl-20">
+            <div className="flex flex-col lg:flex-row bg-secondary justify-between max-lg:items-center pb-28 m-4 md:m-20 mt-20 p-4 md:pl-20">
                 <div className="basis-3/4">
                     <h1 className="max-sm:text-4xl max-[1600px]:text-7xl text-8xl font-bold mt-10 md:mt-20 tracking-widest">
                         Regen Med
@@ -118,8 +118,8 @@ function Regenmed() {
                     <h1 className="max-sm:text-3xl max-[1600px]:text-5xl text-6xl font-bold mt-6 md:mt-12 text-primary">
                         01
                     </h1>
-                    <div className="max-w-[50rem]">
-                        <h1 className="max-sm:text-3xl max-[1600px]:text-4xl text-5xl font-bold  mt-10 md:mt-20">
+                    <div className="max-w-[30rem]">
+                        <h1 className="max-sm:text-3xl max-[1600px]:text-4xl text-5xl font-bol mt-10 md:mt-20">
                             FEATURES
                         </h1>
                         <p className="text-1xl mt-6 text-tertiary text-justify">
@@ -148,17 +148,18 @@ function Regenmed() {
                     <Image
                         src={rmPC}
                         alt=""
-                        className="lg:-translate-y-32 lg:-translate-x-10 translate-y-28 max-lg:scale-150"
+                        className="lg:-translate-y-52 lg:-translate-x-10 translate-y-28 max-lg:scale-150"
                     ></Image>
                 </div>
             </div>
 
-            <div className="grid grid-cols-2 grid-rows-2 gap-4">
-                <Image src={rmHero} alt="" className="shadow-lg w-full" />
-                <Image src={rmHero5} alt="" className="shadow-lg w-full" />
+            <div className="grid grid-cols-2 grid-rows-2 gap-4 m-28 translate-y-[-32rem]">
+                {/* <Image src={rmHero} alt="" className="shadow-lg w-full" /> */}
+                <div></div>
+                <Image src={rmTeam} alt="" className="shadow-lg w-full" />
 
-                <Image src={rmHero3} alt="" className="shadow-lg w-full" />
-                <Image src={rmHero4} alt="" className="shadow-lg w-full" />
+                <Image src={rmFAQ} alt="" className="shadow-lg w-full" />
+                <Image src={rmServices} alt="" className="shadow-lg w-full" />
             </div>
         </>
     );
