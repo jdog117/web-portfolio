@@ -28,9 +28,9 @@ export default function Home() {
         <div className="">
             <Hero />
             <Regenmed />
-            <Fund />
+            {/* <Fund />
             <Emailfinder />
-            <Footer />
+            <Footer /> */}
         </div>
     );
 }
@@ -109,19 +109,19 @@ function Hero() {
 
 function Regenmed() {
     return (
-        <div className="relative flex bg-secondary justify-between  pb-20 m-4 md:m-20">
+        <div className="flex flex-col lg:flex-row bg-secondary justify-between max-lg:items-center pb-20 m-4 md:m-20 mt-20 p-4 md:pl-20">
             <div className="basis-3/4">
-                <h1 className="max-[1600px]:text-7xl text-8xl font-bold ml-32 mt-20 tracking-widest">
+                <h1 className="max-sm:text-4xl max-[1600px]:text-7xl text-8xl font-bold mt-10 md:mt-20 tracking-widest">
                     Regen Med
                 </h1>
-                <h1 className="max-[1600px]:text-5xl text-6xl font-bold ml-32 mt-12 text-primary">
+                <h1 className="max-sm:text-3xl max-[1600px]:text-5xl text-6xl font-bold mt-6 md:mt-12 text-primary">
                     01
                 </h1>
                 <div className="max-w-[50rem]">
-                    <h1 className="max-[1600px]:text-4xl text-5xl font-bold ml-32 mt-20">
+                    <h1 className="max-sm:text-3xl max-[1600px]:text-4xl text-5xl font-bold  mt-10 md:mt-20">
                         FEATURES
                     </h1>
-                    <p className="text-1xl ml-32 mt-6 text-tertiary w-1/2 text-justify">
+                    <p className="text-1xl mt-6 text-tertiary text-justify">
                         Designed and developed this site for a medical startup.
                         It features a JavaScript based virtual treatement
                         consultaion along with scheduling and service
@@ -129,16 +129,16 @@ function Regenmed() {
                     </p>
                 </div>
                 <div className="font-bold">
-                    <h1 className="text-2xl ml-32 mt-12 text-tertiary">
+                    <h1 className="text-2xl mt-12 text-tertiary">
                         Smooth scroll
                     </h1>
-                    <h1 className="text-2xl ml-32 mt-4 text-tertiary">
+                    <h1 className="text-2xl mt-4 text-tertiary">
                         SEO optimized
                     </h1>
-                    <h1 className="text-2xl ml-32 mt-4 text-tertiary">
+                    <h1 className="text-2xl mt-4 text-tertiary">
                         Responsive design
                     </h1>
-                    <h1 className="text-2xl ml-32 mt-4 text-tertiary">
+                    <h1 className="text-2xl mt-4 text-tertiary">
                         Beautiful GSAP animations
                     </h1>
                 </div>
@@ -147,7 +147,7 @@ function Regenmed() {
                 <Image
                     src={rmPC}
                     alt=""
-                    className="-translate-y-32 -translate-x-10"
+                    className="lg:-translate-y-32 lg:-translate-x-10 translate-y-28 max-lg:scale-150"
                 ></Image>
             </div>
 
