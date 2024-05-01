@@ -248,9 +248,15 @@ function Emailfinder() {
         <>
             <div className="flex flex-col lg:flex-row bg-[rgb(209,191,170)] justify-between max-lg:items-center pb-28 m-4 md:m-20 p-4 md:pl-20 ">
                 <div className="basis-3/4">
-                    <h1 className="max-sm:text-4xl max-[1600px]:text-7xl text-8xl font-bold mt-10 md:mt-20 tracking-widest">
-                        Email Finder
-                    </h1>
+                    <a
+                        href="https://emailfinder-jc.vercel.app"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <h1 className="max-sm:text-4xl max-[1600px]:text-7xl text-8xl font-bold mt-10 md:mt-20 tracking-widest hover:text-accent transition-all hover:scale-[102%]">
+                            Email Finder
+                        </h1>
+                    </a>
                     <h1 className="max-sm:text-3xl max-[1600px]:text-5xl text-6xl font-bold mt-6 md:mt-12 text-primary">
                         03
                     </h1>
@@ -282,22 +288,34 @@ function Emailfinder() {
                     </div>
                 </div>
                 <div className="w-2/3">
-                    <Image
-                        src={emailPC}
-                        alt=""
-                        className="lg:-translate-y-52 lg:-translate-x-10 translate-y-36 max-lg:scale-150 scale-125"
-                    ></Image>
+                    <a
+                        href="https://emailfinder-jc.vercel.app"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <Image
+                            src={emailPC}
+                            alt=""
+                            className="lg:-translate-y-52 lg:-translate-x-10 translate-y-36 max-lg:scale-150 scale-125"
+                        ></Image>
+                    </a>
                 </div>
             </div>
-            <div className="grid grid-cols-1 lg:grid-cols-2 grid-rows-2 gap-4 m-4 md:m-28 max-sm:translate-y-[-1rem] max-lg:translate-y-[1rem] translate-y-[-26rem] xl:translate-y-[-32rem] max-md:mt-20">
+            <div className="grid grid-cols-1 lg:grid-cols-2 grid-auto-rows gap-4 m-4 md:m-28 max-sm:translate-y-[-1rem] max-lg:translate-y-[1rem] translate-y-[-26rem] xl:translate-y-[-32rem] max-md:mt-20">
                 <div className="hidden lg:block"></div>
                 <Image
                     src={emailMobile}
                     alt=""
-                    className="shadow-lg w-[35rem] justify-self-end max-md:mt-10"
+                    className="shadow-lg w-[35rem] justify-self-center lg:justify-self-end max-md:mt-10"
                 />
                 <Image src={emailDark} alt="" className="shadow-lg w-full" />
                 <Image src={emailHero} alt="" className="shadow-lg w-full" />
+            </div>
+            <div className="lg:translate-y-[-20rem] flex-col flex items-center justify-center max-md:mt-20 text-center">
+                <p className="text-5xl md:text-8xl">You reached the end :)</p>
+                <p className="text-3xl md:text-5xl mt-10 md:mt-32">
+                    Thanks for checking out my work
+                </p>
             </div>
         </>
     );
@@ -305,7 +323,7 @@ function Emailfinder() {
 
 function Footer() {
     return (
-        <div className="w-full flex-col md:flex-row flex bg-background justify-between mt-20 p-20 items-center">
+        <div className="w-full flex-col md:flex-row flex bg-background justify-between mt-20 p-20 md:items-center">
             <div className="flex-row">
                 <h1 className="text-lg font-bold"> Contact</h1>
                 <p className="mt-4 text-base">jspcasey@gmail.com</p>
