@@ -28,9 +28,9 @@ export default function Home() {
         <div className="">
             <Hero />
             <Regenmed />
-            {/* <Fund />
-            <Emailfinder />
-            <Footer /> */}
+            {/* <Fund /> */}
+            {/* <Emailfinder /> */}
+            <Footer />
         </div>
     );
 }
@@ -85,7 +85,7 @@ function Hero() {
     );
 
     return (
-        <div className="w-full h-screen items-center justify-center flex">
+        <div className="w-full h-screen items-center justify-center flex mb-40">
             <div
                 ref={container}
                 className="container flex flex-col relative w-min"
@@ -93,12 +93,12 @@ function Hero() {
                 <h1 className="text-3xl xl:text-4xl ml-10 md:ml-0 text-left md:text-right mr-8 xl:mr-12 mb-2 justify-end flex j-title invisible">
                     JOEY CASEY
                 </h1>
-                <h1 className="p-title text-7xl xl:text-9xl font-extrabold tracking-[1em] flex flex-col space-y-2 md:flex-row md:space-y-0 justify-center text-center invisible">
+                <h1 className="p-title max-sm:text-4xl text-6xl xl:text-9xl font-extrabold tracking-[1em] flex flex-col space-y-2 md:flex-row md:space-y-0 justify-center text-center invisible">
                     {Array.from("PORTFOLIO").map((letter, index) => (
                         <span key={index}>{letter}</span>
                     ))}
                 </h1>
-                <div className="absolute flex flex-col mt-20 xl:mt-28 font-bold text-stroke text-transparent md:translate-x-0 translate-x-16 md:translate-y-0 translate-y-[670px] md:mr-0 xl:-mr-16 right-0 visible ">
+                <div className="absolute flex flex-col mt-20 xl:mt-28 font-bold text-stroke text-transparent md:translate-x-0 -translate-x-16 md:translate-y-0 translate-y-[570px] max-sm:translate-y-[400px] md:mr-0 xl:-mr-16 right-0 visible">
                     <h1 className="text-5xl xl:text-8xl bruh">DEV &</h1>
                     <h1 className="text-5xl xl:text-8xl bruh">DESIGN</h1>
                 </div>
@@ -110,7 +110,7 @@ function Hero() {
 function Regenmed() {
     return (
         <>
-            <div className="flex flex-col lg:flex-row bg-secondary justify-between max-lg:items-center pb-28 m-4 md:m-20 mt-20 p-4 md:pl-20">
+            <div className="flex flex-col lg:flex-row bg-secondary justify-between max-lg:items-center pb-28 m-4 md:m-20 p-4 md:pl-20">
                 <div className="basis-3/4">
                     <h1 className="max-sm:text-4xl max-[1600px]:text-7xl text-8xl font-bold mt-10 md:mt-20 tracking-widest">
                         Regen Med
@@ -153,9 +153,8 @@ function Regenmed() {
                 </div>
             </div>
 
-            <div className="grid grid-cols-2 grid-rows-2 gap-4 m-28 translate-y-[-32rem]">
-                {/* <Image src={rmHero} alt="" className="shadow-lg w-full" /> */}
-                <div></div>
+            <div className="grid grid-cols-1 lg:grid-cols-2 grid-rows-2 gap-4 m-4 md:m-28 max-sm:translate-y-[-1rem] max-lg:translate-y-[1rem] translate-y-[-26rem] xl:translate-y-[-32rem] max-md:mt-20">
+                <div className="hidden lg:block"></div>
                 <Image src={rmTeam} alt="" className="shadow-lg w-full" />
 
                 <Image src={rmFAQ} alt="" className="shadow-lg w-full" />
@@ -313,13 +312,13 @@ function Emailfinder() {
 
 function Footer() {
     return (
-        <div className="w-full flex bg-background justify-between mt-20 p-20 items-center">
+        <div className="w-full flex-col md:flex-row flex bg-background justify-between mt-20 p-20 items-center">
             <div className="flex-row">
                 <h1 className="text-lg font-bold"> Contact</h1>
                 <p className="mt-4 text-base">jspcasey@gmail.com</p>
                 <p className="mt-2 text-base">5092184707</p>
             </div>
-            <p className="text-sm text-neutral-700">
+            <p className="text-sm text-neutral-700 max-md:mt-10">
                 © Joey Casey {new Date().getFullYear()}
             </p>
         </div>
