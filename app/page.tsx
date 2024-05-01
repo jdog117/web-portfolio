@@ -9,11 +9,13 @@ import rmHero from "@/public/regenmed/rmheronew.png";
 import rmTeam from "@/public/regenmed/rmTeam.png";
 import rmFAQ from "@/public/regenmed/rmfaq.png";
 import rmServices from "@/public/regenmed/figma/rmservices.png";
-import fund1 from "@/public/fund/fund1.png";
-import fund2 from "@/public/fund/fund2.png";
-import fund3 from "@/public/fund/fund3.png";
-import fund4 from "@/public/fund/fund4.png";
-import fund5 from "@/public/fund/fund5.png";
+import fundContact from "@/public/fund/fundContact.png";
+import fundEnd from "@/public/fund/fundEnd.png";
+import fundLong from "@/public/fund/fundLong.png";
+import fundMission from "@/public/fund/fundMission.png";
+import fundPC from "@/public/fund/fundPc.png";
+import fundTeam from "@/public/fund/fundTeam.png";
+import fundVision from "@/public/fund/fundVision.png";
 import bef1 from "@/public/emailfinder/ef1.png";
 import bef2 from "@/public/emailfinder/ef2.png";
 import bef3 from "@/public/emailfinder/email-finder-base.png";
@@ -28,7 +30,7 @@ export default function Home() {
         <div className="">
             <Hero />
             <Regenmed />
-            {/* <Fund /> */}
+            <Fund />
             {/* <Emailfinder /> */}
             <Footer />
         </div>
@@ -110,7 +112,7 @@ function Hero() {
 function Regenmed() {
     return (
         <>
-            <div className="flex flex-col lg:flex-row bg-secondary justify-between max-lg:items-center pb-28 m-4 md:m-20 p-4 md:pl-20">
+            <div className="flex flex-col lg:flex-row bg-[rgb(209,191,170)] justify-between max-lg:items-center pb-28 m-4 md:m-20 p-4 md:pl-20">
                 <div className="basis-3/4">
                     <h1 className="max-sm:text-4xl max-[1600px]:text-7xl text-8xl font-bold mt-10 md:mt-20 tracking-widest">
                         Regen Med
@@ -166,66 +168,66 @@ function Regenmed() {
 
 function Fund() {
     return (
-        <div className="w-full flex bg-background justify-between overflow-hidden mt-20 pb-20">
-            <div className="flex justify-end mt-52 mr-20">
-                <div className="flex-row items-end z-20">
+        <>
+            <div className="flex flex-col lg:flex-row bg-[rgb(197,170,163)] justify-between max-lg:items-center pb-28 m-4 md:m-20 p-4 md:pl-20 mt-56">
+                <div className="w-2/3">
                     <Image
-                        src={fund1}
+                        src={fundPC}
                         alt=""
-                        width={800}
-                        className="shadow-lg m-8 "
-                    />
-                    <Image
-                        src={fund2}
-                        alt=""
-                        width={800}
-                        className="shadow-lg m-8"
-                    />
-                    <div className="flex flex-row">
-                        <Image
-                            src={fund3}
-                            alt=""
-                            width={400}
-                            className="shadow-lg m-4"
-                        />
-                        <Image
-                            src={fund4}
-                            alt=""
-                            width={400}
-                            className="shadow-lg m-4"
-                        />
+                        className="lg:-translate-y-72 lg:-translate-x-10 -translate-y-10 max-lg:scale-150"
+                    ></Image>
+                </div>
+
+                <div className="basis-2/4">
+                    <h1 className="max-sm:text-4xl max-[1600px]:text-7xl text-8xl font-bold mt-10 md:mt-20 tracking-widest">
+                        1571 Fund
+                    </h1>
+                    <h1 className="max-sm:text-3xl max-[1600px]:text-5xl text-6xl font-bold mt-6 md:mt-12 text-primary">
+                        02
+                    </h1>
+                    <div className="max-w-[30rem]">
+                        <h1 className="max-sm:text-3xl max-[1600px]:text-4xl text-5xl font-bol mt-10 md:mt-20">
+                            FEATURES
+                        </h1>
+                        <p className="text-1xl mt-6 text-tertiary text-justify">
+                            Started in figma colaborating with the team to
+                            concept the design of the site. Then developed it as
+                            a single page SEO optimized Vite app. Added css and
+                            GSAP animation across site and responsive design.
+                        </p>
+                    </div>
+                    <div className="font-bold">
+                        <h1 className="text-2xl mt-12 text-tertiary">
+                            Contact form
+                        </h1>
+                        <h1 className="text-2xl mt-4 text-tertiary">
+                            SEO optimized
+                        </h1>
+                        <h1 className="text-2xl mt-4 text-tertiary">
+                            Responsive design
+                        </h1>
+                        <h1 className="text-2xl mt-4 text-tertiary">
+                            GSAP animation
+                        </h1>
                     </div>
                 </div>
             </div>
 
-            <div className="z-20 w-1/2">
-                <a href="https://1571fund.com">
-                    <h1 className="text-7xl font-bold ml-32 mt-20 tracking-widest scale-100 hover:scale-105 transition-all">
-                        1571 Fund
-                    </h1>
-                </a>
-                <h1 className="text-4xl font-bold ml-32 mt-12 text-primary">
-                    02
-                </h1>
-                <h1 className="text-5xl font-bold ml-32 mt-20">FEATURES</h1>
-                <p className="text-1xl ml-32 mt-6 text-tertiary w-1/2 text-justify">
-                    Started in figma colaborating with the team to concept the
-                    design of the site. Then developed it as a single page SEO
-                    optimized Vite app with a contact form.
-                </p>
-                <div className="font-bold">
-                    <h1 className="text-2xl ml-32 mt-12 text-tertiary">
-                        SEO optimized
-                    </h1>
-                    <h1 className="text-2xl ml-32 mt-4 text-tertiary">
-                        Contact form
-                    </h1>
-                    <h1 className="text-2xl ml-32 mt-4 text-tertiary">
-                        Responsive design
-                    </h1>
-                </div>
+            <div className="grid grid-cols-1 lg:grid-cols-2 grid-rows-3 gap-4 m-4 md:m-28 max-sm:translate-y-[-3rem] max-lg:translate-y-[1rem] translate-y-[-26rem] xl:translate-y-[-32rem] max-md:mt-20">
+                <Image src={fundVision} alt="" className="shadow-lg w-full" />
+                <div className="hidden lg:block"></div>
+
+                <Image src={fundMission} alt="" className="shadow-lg w-full" />
+                <Image src={fundTeam} alt="" className="shadow-lg w-full" />
+                <Image src={fundContact} alt="" className="shadow-lg w-full" />
+                <Image src={fundEnd} alt="" className="shadow-lg w-full" />
+                {/* <Image
+                    src={fundLong}
+                    alt=""
+                    className="shadow-lg w-full col-span-2"
+                /> */}
             </div>
-        </div>
+        </>
     );
 }
 
