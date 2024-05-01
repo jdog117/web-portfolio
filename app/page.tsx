@@ -16,11 +16,11 @@ import fundMission from "@/public/fund/fundMission.png";
 import fundPC from "@/public/fund/fundPc.png";
 import fundTeam from "@/public/fund/fundTeam.png";
 import fundVision from "@/public/fund/fundVision.png";
-import bef1 from "@/public/emailfinder/ef1.png";
-import bef2 from "@/public/emailfinder/ef2.png";
-import bef3 from "@/public/emailfinder/email-finder-base.png";
-import bef4 from "@/public/emailfinder/email-finder-example2.png";
-import bef5 from "@/public/emailfinder/site-bigger2.png";
+import emailAbout from "@/public/emailfinder/emailAbout.png";
+import emailDark from "@/public/emailfinder/emailDarkAccepts.png";
+import emailHero from "@/public/emailfinder/emailHeroL.png";
+import emailMobile from "@/public/emailfinder/emailMobile.png";
+import emailPC from "@/public/emailfinder/emailPC2.png";
 import rmPC from "@/public/regenmed/rm_pc1.png";
 
 gsap.registerPlugin(useGSAP);
@@ -31,7 +31,7 @@ export default function Home() {
             <Hero />
             <Regenmed />
             <Fund />
-            {/* <Emailfinder /> */}
+            <Emailfinder />
             <Footer />
         </div>
     );
@@ -245,82 +245,61 @@ function Fund() {
 
 function Emailfinder() {
     return (
-        <div className="w-full flex bg-secondary justify-between overflow-hidden pb-20">
-            <div className="z-20 w-1/2">
-                <a href="https://emailfinder-jc.vercel.app">
-                    <h1 className="text-7xl font-bold ml-32 mt-20 tracking-widest scale-100 hover:scale-105 transition-all">
+        <>
+            <div className="flex flex-col lg:flex-row bg-[rgb(209,191,170)] justify-between max-lg:items-center pb-28 m-4 md:m-20 p-4 md:pl-20 ">
+                <div className="basis-3/4">
+                    <h1 className="max-sm:text-4xl max-[1600px]:text-7xl text-8xl font-bold mt-10 md:mt-20 tracking-widest">
                         Email Finder
                     </h1>
-                </a>
-                <h1 className="text-4xl font-bold ml-32 mt-12 text-primary">
-                    03
-                </h1>
-                <h1 className="text-5xl font-bold ml-32 mt-20">FEATURES</h1>
-                <p className="text-1xl ml-32 mt-6 text-tertiary w-1/2 text-justify">
-                    I created this site to aid me on my job search. Often, when
-                    I need to contact a recruiter or an employee at a company
-                    I&apos;m looking to apply to, it&apos;s difficult to get
-                    their contact info or even reach them on LinkedIn.
-                </p>
-                <div className="font-bold">
-                    <h1 className="text-2xl ml-32 mt-12 text-tertiary">
-                        Custom secure server
+                    <h1 className="max-sm:text-3xl max-[1600px]:text-5xl text-6xl font-bold mt-6 md:mt-12 text-primary">
+                        03
                     </h1>
-                    <h1 className="text-2xl ml-32 mt-4 text-tertiary">
-                        Color themes
-                    </h1>
-                    <h1 className="text-2xl ml-32 mt-4 text-tertiary">
-                        Responsive design
-                    </h1>
-                    <h1 className="text-2xl ml-32 mt-4 text-tertiary">
-                        Input response & validation
-                    </h1>
+                    <div className="max-w-[30rem]">
+                        <h1 className="max-sm:text-3xl max-[1600px]:text-4xl text-5xl font-bol mt-10 md:mt-20">
+                            FEATURES
+                        </h1>
+                        <p className="text-1xl mt-6 text-tertiary text-justify">
+                            I created this web app to aid me on my job search.
+                            Often, when I need to contact a recruiter or an
+                            employee at a company I&apos;m looking to apply to,
+                            it&apos;s difficult to get their contact info or
+                            even reach them on LinkedIn.
+                        </p>
+                    </div>
+                    <div className="font-bold">
+                        <h1 className="text-2xl mt-12 text-tertiary">
+                            Custom secure server
+                        </h1>
+                        <h1 className="text-2xl mt-4 text-tertiary">
+                            Color themes
+                        </h1>
+                        <h1 className="text-2xl mt-4 text-tertiary">
+                            Responsive design
+                        </h1>
+                        <h1 className="text-2xl mt-4 text-tertiary">
+                            Input validation and error handling
+                        </h1>
+                    </div>
+                </div>
+                <div className="w-2/3">
+                    <Image
+                        src={emailPC}
+                        alt=""
+                        className="lg:-translate-y-52 lg:-translate-x-10 translate-y-36 max-lg:scale-150 scale-125"
+                    ></Image>
                 </div>
             </div>
-
-            <div className="flex justify-end mt-52 mr-20">
-                <div className="flex-row items-end z-20">
-                    <Image
-                        src={bef2}
-                        alt=""
-                        width={800}
-                        className="shadow-lg m-8 "
-                    />
-                    <Image
-                        src={bef1}
-                        alt=""
-                        width={800}
-                        className="shadow-lg m-8"
-                    />
-                    <Image
-                        src={bef4}
-                        alt=""
-                        width={800}
-                        className="shadow-lg m-8"
-                    />
-                    <Image
-                        src={bef3}
-                        alt=""
-                        width={800}
-                        className="shadow-lg m-8"
-                    />
-                    {/* <div className="flex flex-row">
-                        <Image
-                            src={bef3}
-                            alt=""
-                            width={400}
-                            className="shadow-lg m-4"
-                        />
-                        <Image
-                            src={bef1}
-                            alt=""
-                            width={400}
-                            className="shadow-lg m-4"
-                        />
-                    </div> */}
-                </div>
+            <div className="grid grid-cols-1 lg:grid-cols-2 grid-rows-2 gap-4 m-4 md:m-28 max-sm:translate-y-[-1rem] max-lg:translate-y-[1rem] translate-y-[-26rem] xl:translate-y-[-32rem] max-md:mt-20">
+                <div className="hidden lg:block"></div>
+                <Image
+                    src={emailMobile}
+                    alt=""
+                    className="shadow-lg w-[35rem] justify-self-end max-md:mt-10"
+                />
+                <Image src={emailDark} alt="" className="shadow-lg w-full" />
+                <Image src={emailHero} alt="" className="shadow-lg w-full" />
             </div>
-        </div>
+        </>
     );
 }
 
