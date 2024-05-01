@@ -142,7 +142,7 @@ function Regenmed() {
                             Responsive design
                         </h1>
                         <h1 className="text-2xl mt-4 text-tertiary">
-                            Beautiful GSAP animations
+                            GSAP animations
                         </h1>
                     </div>
                 </div>
@@ -219,7 +219,7 @@ function Fund() {
                             Responsive design
                         </h1>
                         <h1 className="text-2xl mt-4 text-tertiary">
-                            GSAP animation
+                            GSAP animations
                         </h1>
                     </div>
                 </div>
@@ -233,11 +233,6 @@ function Fund() {
                 <Image src={fundTeam} alt="" className="shadow-lg w-full" />
                 <Image src={fundContact} alt="" className="shadow-lg w-full" />
                 <Image src={fundEnd} alt="" className="shadow-lg w-full" />
-                {/* <Image
-                    src={fundLong}
-                    alt=""
-                    className="shadow-lg w-full col-span-2"
-                /> */}
             </div>
         </>
     );
