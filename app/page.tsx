@@ -150,7 +150,7 @@ function Regenmed() {
                     <Image
                         src={rmPC}
                         alt=""
-                        className="lg:-translate-y-52 lg:-translate-x-10 translate-y-28 max-lg:scale-150"
+                        className="lg:-translate-y-52 lg:-translate-x-10 translate-y-36 max-lg:scale-150"
                     ></Image>
                 </div>
             </div>
@@ -331,6 +331,15 @@ function Footer() {
                 <h1 className="text-lg font-bold"> Contact</h1>
                 <p className="mt-4 text-base">jspcasey@gmail.com</p>
                 <p className="mt-2 text-base">5092184707</p>
+                <a
+                    href="https://linkedin.com/in/jspcasey/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <p className="mt-2 text-base hover:text-accent transition-all">
+                        LinkedIn
+                    </p>
+                </a>
             </div>
             <p className="text-sm text-neutral-700 max-md:mt-10">
                 © Joey Casey {new Date().getFullYear()}
