@@ -171,17 +171,29 @@ function Fund() {
         <>
             <div className="flex flex-col lg:flex-row bg-[rgb(197,170,163)] justify-between max-lg:items-center pb-28 m-4 md:m-20 p-4 md:pl-20 mt-56">
                 <div className="w-2/3">
-                    <Image
-                        src={fundPC}
-                        alt=""
-                        className="lg:-translate-y-72 lg:-translate-x-10 -translate-y-10 max-lg:scale-150"
-                    ></Image>
+                    <a
+                        href="https://1571fund.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <Image
+                            src={fundPC}
+                            alt=""
+                            className="lg:-translate-y-72 lg:-translate-x-10 -translate-y-10 max-lg:scale-150"
+                        ></Image>
+                    </a>
                 </div>
 
                 <div className="basis-2/4">
-                    <h1 className="max-sm:text-4xl max-[1600px]:text-7xl text-8xl font-bold mt-10 md:mt-20 tracking-widest">
-                        1571 Fund
-                    </h1>
+                    <a
+                        href="https://1571fund.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <h1 className="max-sm:text-4xl max-[1600px]:text-7xl text-8xl font-bold mt-10 md:mt-20 tracking-widest hover:text-accent transition-all hover:scale-[102%]">
+                            1571 Fund
+                        </h1>
+                    </a>
                     <h1 className="max-sm:text-3xl max-[1600px]:text-5xl text-6xl font-bold mt-6 md:mt-12 text-primary">
                         02
                     </h1>
