@@ -22,6 +22,16 @@ import emailHero from "@/public/emailfinder/emailJSP.png";
 import emailMobile from "@/public/emailfinder/emailMobile2.png";
 import emailPC from "@/public/emailfinder/emailPC2.png";
 import rmPC from "@/public/regenmed/rm_pc1.png";
+import {
+    Mouse,
+    ArrowRightLeft,
+    SearchCheck,
+    Route,
+    AppWindow,
+    Server,
+    Palette,
+    ListChecks,
+} from "lucide-react";
 
 gsap.registerPlugin(useGSAP);
 
@@ -132,18 +142,32 @@ function Regenmed() {
                         </p>
                     </div>
                     <div className="font-bold">
-                        <h1 className="text-2xl mt-12 text-tertiary">
-                            Smooth scroll
-                        </h1>
-                        <h1 className="text-2xl mt-4 text-tertiary">
-                            SEO optimized
-                        </h1>
-                        <h1 className="text-2xl mt-4 text-tertiary">
-                            Responsive design
-                        </h1>
-                        <h1 className="text-2xl mt-4 text-tertiary">
-                            GSAP animations
-                        </h1>
+                        <div className="font-bold flex items-center mt-12">
+                            <Mouse />
+                            <h1 className="text-2xl text-tertiary ml-4">
+                                Smooth scroll
+                            </h1>
+                        </div>
+
+                        <div className="font-bold flex items-center mt-4">
+                            <SearchCheck />
+                            <h1 className="text-2xl ml-4 text-tertiary">
+                                SEO optimized
+                            </h1>
+                        </div>
+
+                        <div className="font-bold flex items-center mt-4">
+                            <ArrowRightLeft />
+                            <h1 className="text-2xl ml-4 text-tertiary">
+                                Responsive design
+                            </h1>
+                        </div>
+                        <div className="font-bold flex items-center mt-4">
+                            <Route />
+                            <h1 className="text-2xl ml-4 text-tertiary">
+                                GSAP animations
+                            </h1>
+                        </div>
                     </div>
                 </div>
                 <div className="w-2/3">
@@ -209,18 +233,30 @@ function Fund() {
                         </p>
                     </div>
                     <div className="font-bold">
-                        <h1 className="text-2xl mt-12 text-tertiary">
-                            Contact form
-                        </h1>
-                        <h1 className="text-2xl mt-4 text-tertiary">
-                            SEO optimized
-                        </h1>
-                        <h1 className="text-2xl mt-4 text-tertiary">
-                            Responsive design
-                        </h1>
-                        <h1 className="text-2xl mt-4 text-tertiary">
-                            GSAP animations
-                        </h1>
+                        <div className="font-bold flex items-center mt-12">
+                            <AppWindow />
+                            <h1 className="text-2xl ml-4 text-tertiary">
+                                Contact form
+                            </h1>
+                        </div>
+                        <div className="font-bold flex items-center mt-4">
+                            <SearchCheck />
+                            <h1 className="text-2xl ml-4 text-tertiary">
+                                SEO optimized
+                            </h1>
+                        </div>
+                        <div className="font-bold flex items-center mt-4">
+                            <ArrowRightLeft />
+                            <h1 className="text-2xl ml-4 text-tertiary">
+                                Responsive design
+                            </h1>
+                        </div>
+                        <div className="font-bold flex items-center mt-4">
+                            <Route />
+                            <h1 className="text-2xl ml-4 text-tertiary">
+                                GSAP animations
+                            </h1>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -269,18 +305,30 @@ function Emailfinder() {
                         </p>
                     </div>
                     <div className="font-bold">
-                        <h1 className="text-2xl mt-12 text-tertiary">
-                            Custom secure server
-                        </h1>
-                        <h1 className="text-2xl mt-4 text-tertiary">
-                            Color themes
-                        </h1>
-                        <h1 className="text-2xl mt-4 text-tertiary">
-                            Responsive design
-                        </h1>
-                        <h1 className="text-2xl mt-4 text-tertiary">
-                            Input validation and error handling
-                        </h1>
+                        <div className="font-bold flex items-center mt-12">
+                            <Server />
+                            <h1 className="text-2xl ml-4 text-tertiary">
+                                Custom secure server
+                            </h1>
+                        </div>
+                        <div className="font-bold flex items-center mt-4">
+                            <Palette />
+                            <h1 className="text-2xl ml-4 text-tertiary">
+                                Color themes
+                            </h1>
+                        </div>
+                        <div className="font-bold flex items-center mt-4">
+                            <ArrowRightLeft />
+                            <h1 className="text-2xl ml-4 text-tertiary">
+                                Responsive design
+                            </h1>
+                        </div>
+                        <div className="font-bold flex items-center mt-4">
+                            <ListChecks />
+                            <h1 className="text-2xl ml-4 text-tertiary">
+                                Input validation and error handling
+                            </h1>
+                        </div>
                     </div>
                 </div>
                 <div className="w-2/3">
