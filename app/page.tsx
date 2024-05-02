@@ -295,13 +295,27 @@ function Emailfinder() {
                         <h1 className="max-sm:text-3xl max-[1600px]:text-4xl text-5xl font-bol mt-10 md:mt-20">
                             FEATURES
                         </h1>
-                        <p className="text-1xl mt-6 text-tertiary text-justify">
+                        <p className="text-1xl mt- text-tertiary text-justify">
                             I created this web app to aid me on my job search.
                             Often, when I need to contact a recruiter or an
                             employee at a company I&apos;m looking to apply to,
                             it&apos;s difficult to get their contact info or
                             even reach them on LinkedIn so I made this app to
                             find and verify emails.
+                        </p>
+
+                        <p className="text-tertiary mt-4 text-justify">
+                            Checkout my{" "}
+                            <a
+                                href="https://github.com/jdog117/email-finder"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-primary"
+                            >
+                                github repo
+                            </a>{" "}
+                            to read more about this project and the troublesome
+                            adventure it was.
                         </p>
                     </div>
                     <div className="font-bold">
@@ -345,8 +359,8 @@ function Emailfinder() {
                     </a>
                 </div>
             </div>
-            <div className="grid grid-cols-1 lg:grid-cols-2 grid-auto-rows gap-4 m-4 md:m-28 max-sm:translate-y-[-1rem] max-lg:translate-y-[1rem] translate-y-[-26rem] xl:translate-y-[-32rem] max-md:mt-20">
-                <div className="hidden lg:block"></div>
+            <div className="grid grid-cols-1 lg:grid-cols-2 grid-auto-rows gap-4 m-4 md:m-28 max-sm:translate-y-[-1rem] max-lg:translate-y-[1rem] translate-y-[-26rem] xl:translate-y-[-26rem] max-md:mt-20">
+                <div className="hidden lg:block pointer-events-none"></div>
                 <Image
                     src={emailMobile}
                     alt=""
