@@ -264,7 +264,8 @@ function Emailfinder() {
                             Often, when I need to contact a recruiter or an
                             employee at a company I&apos;m looking to apply to,
                             it&apos;s difficult to get their contact info or
-                            even reach them on LinkedIn.
+                            even reach them on LinkedIn so I made this app to
+                            find and verify emails.
                         </p>
                     </div>
                     <div className="font-bold">
