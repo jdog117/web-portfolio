@@ -241,7 +241,7 @@ function Fund() {
 function Emailfinder() {
     return (
         <>
-            <div className="flex flex-col lg:flex-row bg-[rgb(209,191,170)] justify-between max-lg:items-center pb-28 m-4 md:m-20 p-4 md:pl-20 ">
+            <div className="flex flex-col lg:flex-row bg-[rgb(216,216,216)] justify-between max-lg:items-center pb-28 m-4 md:m-20 p-4 md:pl-20 ">
                 <div className="basis-3/4">
                     <a
                         href="https://emailfinder-jc.vercel.app"
