@@ -18,8 +18,8 @@ import fundTeam from "@/public/fund/fundTeam.png";
 import fundVision from "@/public/fund/fundVision.png";
 import emailAbout from "@/public/emailfinder/emailAbout.png";
 import emailDark from "@/public/emailfinder/emailDarkAccepts.png";
-import emailHero from "@/public/emailfinder/emailHeroL.png";
-import emailMobile from "@/public/emailfinder/emailMobile.png";
+import emailHero from "@/public/emailfinder/emailJSP.png";
+import emailMobile from "@/public/emailfinder/emailMobile2.png";
 import emailPC from "@/public/emailfinder/emailPC2.png";
 import rmPC from "@/public/regenmed/rm_pc1.png";
 
