@@ -19,11 +19,14 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en">
-            {/* `${inter.variable} ${rubik.variable}` */}
-            <body className={rubik.className}>
-                <LenisSmoothScrollProps>{children}</LenisSmoothScrollProps>
-            </body>
-        </html>
+        <>
+            <html lang="en">
+                {/* `${inter.variable} ${rubik.variable}` */}
+                <body className={rubik.className}>
+                    <LenisSmoothScrollProps>{children}</LenisSmoothScrollProps>
+                </body>
+            </html>
+            <Analytics />
+        </>
     );
 }

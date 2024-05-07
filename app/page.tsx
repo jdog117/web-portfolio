@@ -295,7 +295,7 @@ function Emailfinder() {
                         <h1 className="max-sm:text-3xl max-[1600px]:text-4xl text-5xl font-bol mt-10 md:mt-20">
                             FEATURES
                         </h1>
-                        <p className="text-1xl mt- text-tertiary text-justify">
+                        <p className="text-1xl mt-6 text-tertiary text-justify">
                             I created this web app to aid me on my job search.
                             Often, when I need to contact a recruiter or an
                             employee at a company I&apos;m looking to apply to,
