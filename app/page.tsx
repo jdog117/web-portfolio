@@ -32,12 +32,14 @@ import {
     Palette,
     ListChecks,
 } from "lucide-react";
+import Book from "@/components/bookMeeting";
 
 gsap.registerPlugin(useGSAP);
 
 export default function Home() {
     return (
         <div className="">
+            <Book />
             <Hero />
             <Regenmed />
             <Fund />
