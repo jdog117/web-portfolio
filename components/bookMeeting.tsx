@@ -52,12 +52,12 @@ export default function Book() {
             </DrawerTrigger>
 
             <DrawerContent>
-                <div className="flex flex-col-reverse lg:flex-row max-h-[75vh]">
-                    <div className="w-full lg:w-1/3 p-8 pb-0 lg:pt-32 md:pl-32">
+                <div className="flex flex-col lg:flex-row max-h-[90vh] md:max-h-[75vh]">
+                    <div className="w-full lg:w-1/3 p-8 lg:pt-32 md:pl-32 pb-4">
                         <h1 className="text-2xl md:text-5xl font-bold mb-4 md:mb-10">
                             Contact Me
                         </h1>
-                        <p className="max-w-md my-2 md:my-4 text-tertiary text-justify text-sm md:text-base">
+                        <p className="max-w-md my-2 md:my-4 text-tertiary text-justify text-sm md:text-base max-md:hidden">
                             Let{`'`}s talk! Business or not I{`'`}d love to hear
                             from you. You can reach me with the methods below or
                             book a meeting.
@@ -66,7 +66,7 @@ export default function Book() {
                             <Tooltip>
                                 <TooltipTrigger>
                                     <h1
-                                        className="font-bold md:text-lg"
+                                        className="font-bold md:text-lg hover:text-accent transition-all"
                                         onClick={() =>
                                             navigator.clipboard.writeText(
                                                 "jspcasey@gmail.com"
@@ -86,7 +86,7 @@ export default function Book() {
                                 href="https://www.linkedin.com/in/jspcasey/"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="font-bold md:text-lg"
+                                className="font-bold md:text-lg hover:text-accent transition-all"
                             >
                                 LinkedIn
                             </a>
@@ -96,25 +96,25 @@ export default function Book() {
                                 href="https://github.com/jdog117"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="font-bold md:text-lg"
+                                className="font-bold md:text-lg hover:text-accent transition-all"
                             >
                                 Github
                             </a>
                         </p>
                     </div>
-                    <div className="w-full lg:w-2/3">
+                    <div className="w-full lg:w-2/3 py-4">
                         <InlineWidget
-                            styles={{ height: isLargeScreen ? "70vh" : "40vh" }}
+                            styles={{ height: isLargeScreen ? "70vh" : "50vh" }}
                             url="https://calendly.com/jspcasey"
                         />
                     </div>
                 </div>
 
-                <DrawerFooter className="items-center">
+                <DrawerFooter className="items-center max-md:p-0">
                     <DrawerClose asChild>
                         <Button
                             variant="outline"
-                            className="w-min hover:text-white"
+                            className="w-min hover:text-white visible max-sm:hidden"
                         >
                             Close
                         </Button>
