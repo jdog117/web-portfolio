@@ -387,7 +387,6 @@ function Footer() {
             <div className="flex-row">
                 <h1 className="text-lg font-bold"> Contact</h1>
                 <p className="mt-4 text-base">jspcasey@gmail.com</p>
-                <p className="mt-2 text-base">5092184707</p>
                 <a
                     href="https://linkedin.com/in/jspcasey/"
                     target="_blank"
