@@ -104,7 +104,7 @@ function Hero() {
 
     return (
         <MouseParallaxContainer globalFactorX={0.1} globalFactorY={0.1}>
-            <div className="w-full h-screen items-center justify-center flex mb-40">
+            <div className="w-full h-screen items-start mt-10 md:mt-0 md:items-center justify-center flex mb-40">
                 <div
                     ref={container}
                     className="container flex flex-col relative w-min"
