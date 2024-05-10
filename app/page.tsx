@@ -33,6 +33,10 @@ import {
     ListChecks,
 } from "lucide-react";
 import Book from "@/components/bookMeeting";
+import {
+    MouseParallaxContainer,
+    MouseParallaxChild,
+} from "react-parallax-mouse";
 
 gsap.registerPlugin(useGSAP);
 
@@ -99,25 +103,35 @@ function Hero() {
     );
 
     return (
-        <div className="w-full h-screen items-center justify-center flex mb-40">
-            <div
-                ref={container}
-                className="container flex flex-col relative w-min"
-            >
-                <h1 className="text-3xl xl:text-4xl ml-10 md:ml-0 text-left md:text-right mr-8 xl:mr-12 mb-2 justify-end flex j-title invisible">
-                    JOEY CASEY
-                </h1>
-                <h1 className="p-title max-sm:text-4xl text-6xl xl:text-9xl font-extrabold tracking-[1em] flex flex-col space-y-2 md:flex-row md:space-y-0 justify-center text-center invisible">
-                    {Array.from("PORTFOLIO").map((letter, index) => (
-                        <span key={index}>{letter}</span>
-                    ))}
-                </h1>
-                <div className="absolute flex flex-col mt-20 xl:mt-28 font-bold text-stroke text-transparent md:translate-x-0 -translate-x-16 md:translate-y-0 translate-y-[570px] max-sm:translate-y-[400px] md:mr-0 xl:-mr-16 right-0 visible">
-                    <h1 className="text-5xl xl:text-8xl bruh">DEV &</h1>
-                    <h1 className="text-5xl xl:text-8xl bruh">DESIGN</h1>
+        <MouseParallaxContainer globalFactorX={0.1} globalFactorY={0.1}>
+            <div className="w-full h-screen items-center justify-center flex mb-40">
+                <div
+                    ref={container}
+                    className="container flex flex-col relative w-min"
+                >
+                    <MouseParallaxChild factorX={0.2} factorY={0.3}>
+                        <h1 className="text-3xl xl:text-4xl ml-10 md:ml-0 text-left md:text-right mr-8 xl:mr-12 mb-2 justify-end flex j-title invisible">
+                            JOEY CASEY
+                        </h1>
+                    </MouseParallaxChild>
+                    <MouseParallaxChild factorX={0.1} factorY={0.2}>
+                        <h1 className="p-title max-sm:text-4xl text-6xl xl:text-9xl font-extrabold tracking-[1em] flex flex-col space-y-2 md:flex-row md:space-y-0 justify-center text-center invisible">
+                            {Array.from("PORTFOLIO").map((letter, index) => (
+                                <span key={index}>{letter}</span>
+                            ))}
+                        </h1>
+                    </MouseParallaxChild>
+                    <div className="absolute flex flex-col mt-20 xl:mt-28 font-bold text-stroke text-transparent md:translate-x-0 -translate-x-16 md:translate-y-0 translate-y-[570px] max-sm:translate-y-[400px] md:mr-0 xl:-mr-16 right-0 visible">
+                        <MouseParallaxChild factorX={0.4} factorY={0.3}>
+                            <h1 className="text-5xl xl:text-8xl bruh">DEV &</h1>
+                            <h1 className="text-5xl xl:text-8xl bruh">
+                                DESIGN
+                            </h1>
+                        </MouseParallaxChild>
+                    </div>
                 </div>
             </div>
-        </div>
+        </MouseParallaxContainer>
     );
 }
 
